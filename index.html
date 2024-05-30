@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulär + Tillgänglighet</title>
+  <link rel="stylesheet" href="mainstyle.css">
+</head>
+
+<body>
+  <form class="form" action="https://httpbin.org/anything" method="post">
+    <div class="closePop">
+      <p class="closePopName"> STÄNG X </p>
+    </div>
+
+    <div>
+      <ul class="tabOpt">
+        <li class="BliMedlem"> BLI MEDLEM</li>
+        <li class="LoggaIn"> LOGGA IN</li>
+      </ul>
+
+    </div>
+    <div class="info">
+      <div class="inputinfo">
+        <label for="E-postadress"></label>
+        <input id="E-postadress" name="E-postadress" type="text" placeholder="E-postadress*" required
+          aria-required="true" />
+      </div>
+
+      <div class="inputinfo">
+        <label for="telefon"></label>
+        <input id="telefon" name="telefon" type="text" placeholder="Telefon">
+      </div>
+
+      <div class="inputinfo">
+        <label for="lösenord"></label>
+        <input id="lösenord" name="lösenord" type="text" placeholder="Lösenord*">
+      </div>
+
+      <button class="Lösenordbutton" type="button"> VISA LÖSENORD</button>
+
+      <div class="checkbox">
+        <input id="vilkoren" type="checkbox">
+        <label for="vilkoren"> Jag vill bli medlem i Club Lyko och godkänner de allmänna villkoren, samt har tagit del
+          av Lykos personuppgiftspolicy</label>
+      </div>
+
+      <div class="checkbox">
+        <input id="viaEpost" type="checkbox">
+        <label for="viaEpost">Ja tack, jag vill få erbjuanden via e-post.</label>
+      </div>
+
+      <div class="checkbox">
+        <input id="viaTelefon" type="checkbox">
+        <label for="viaTelefon">Ja tack, jag vill få erbjuanden via </label>
+      </div>
+
+      <button class="button" type="button">BLI MEDLEM</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
